@@ -86,9 +86,9 @@ const Detail = () => {
                 <img
                   src={`https://image.tmdb.org/t/p/original${detail.poster_path}`}
                   alt=""
-                  className="rounded-xl top-40 left-10 fixed w-60 shadow-lg  shadow-white/10"
+                  className="rounded-xl top-48 left-10 fixed w-60 shadow-lg  shadow-white/10"
                 />
-                <div className="  text-white flex flex-wrap  content-center m-auto items-center mb-8  ">
+                <div className="  text-white flex flex-wrap  content-center m-auto items-center mb-16  ">
                   <div
                     className="radial-progress text-amber-500 mr-2 shadow-2xl shadow-white/70 "
                     style={{

@@ -23,13 +23,6 @@ const App = () => {
   return (
     <ThemeContext.Provider value={theme}>
       <BrowserRouter>
-        <Navbar
-          backdropBlur="backdrop-blur-md bg-slate-400/80"
-          positionNavbar="fixed"
-          cat1={"Thriller"}
-          cat2={"Horror"}
-          cat3={"Comedy"}
-        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detail" element={<Detail />} />
