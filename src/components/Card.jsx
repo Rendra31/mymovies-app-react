@@ -15,7 +15,7 @@ const Card = ({ image, title, date, keys, onClick }) => {
           onClick={onClick}
         />
       </div>
-      <div className="flex justify-between items-center px-4 mt-3  dark:text-abu-100 ">
+      <div className="flex justify-between items-center px-4 mt-3  dark:text-zinc-200 ">
         <div>
           <h5 className="mb-2 text-xs md:text-sm font-semibold cursor-pointer">
             {title}

@@ -11,7 +11,7 @@ const Header = () => {
 
   const get_upcoming = `https://api.themoviedb.org/3/movie/upcoming?api_key=${
     import.meta.env.VITE_API_KEY
-  }&language=en-US&page=2`;
+  }&language=en-US&page=1`;
 
   useEffect(() => {
     getUpcoming();
@@ -36,12 +36,12 @@ const Header = () => {
   return (
     <div
       className="carousel w-full bg-cover
-       h-[90vh]"
+       h-screen"
       style={{
         backgroundImage: `url(${`https://image.tmdb.org/t/p/original${moviesRandom?.backdrop_path})`}`,
       }}
     >
-      <div className="carousel w-full bg-cover bg-gradient-to-t from-slate-900 via-slate-900/30  to-transparent">
+      <div className="carousel w-full  bg-cover bg-gradient-to-t from-slate-900 via-slate-900/30  to-transparent">
         <div className="grid content-end p-5 w-[90vw] h-[80vh] pt-40  m-auto">
           <h1 className="text-2xl md:text-4xl lg:text-6xl  font-semibold mb-3 text-white/90 ">
             {moviesRandom?.title}

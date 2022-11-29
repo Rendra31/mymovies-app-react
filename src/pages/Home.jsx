@@ -44,14 +44,6 @@ const Home = () => {
     return (
       <>
         <Container>
-          <Navbar
-            backdropBlur="backdrop-blur-sm"
-            bgColor="bg-gradient-to-r from-sky-100 via-purple-100/60 to-orange-100/90"
-            positionNavbar="sticky"
-            cat1={"Thriller"}
-            cat2={"Horror"}
-            cat3={"Comedy"}
-          />
           <Header />
           <div className="pl-10 "></div>
           <div className=" grid 2xl:grid-cols-6 bg-opa stic lg:grid-cols-4 gap-5 p-5 md:grid-cols-3 sm:grid-cols-2 z-0 backdrop-blur-2xl ">

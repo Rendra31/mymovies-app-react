@@ -5,10 +5,11 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import MappingGenre from "../components/MappingGenre";
+
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
 import { FiShare2 } from "react-icons/fi";
-import Button from "../components/Button";
 
 const Detail = () => {
   const location = useLocation();
@@ -34,15 +35,15 @@ const Detail = () => {
   const rateNumber = detail.vote_average + "";
   // console.log(rateNumber.length);
   const rate =
-    rateNumber.length > 4 ? rateNumber.slice(0, -2) : rateNumber.slice(0, -3);
+    rateNumber.length > 4 ? rateNumber.slice(0, -2) : rateNumber.slice(0, -1);
 
   // ================================
   // CONVERT RUNTIME TO HOUR & MINUTE
   // ================================
   const convertToHour = +Math.floor(detail.runtime / 60) + "";
   const convertToMinute = detail.runtime - convertToHour * 60 + "";
-  const hours = `${convertToHour}:`;
-  const minutes = `${convertToMinute} min`;
+  const hours = `${convertToHour}h `;
+  const minutes = `${convertToMinute}min`;
 
   // ===================
   // SLICE TEXT OVERVIEW
@@ -89,7 +90,7 @@ const Detail = () => {
                 />
                 <div className="  text-white flex flex-wrap  content-center m-auto items-center mb-8  ">
                   <div
-                    className="radial-progress text-orange-500 mr-2 shadow-2xl shadow-white/70 "
+                    className="radial-progress text-amber-500 mr-2 shadow-2xl shadow-white/70 "
                     style={{
                       "--value": `${detail.vote_average * 10} `,
                       "--size": "3rem",
@@ -149,7 +150,9 @@ const Detail = () => {
                   <div className="flex flex-wrap pt-3  border-b-2 pb-1  border-dashed content-center text-center">
                     Genres:
                     {genreFilm?.map((genre) => {
-                      return <Button genreName={genre.name} key={genre.id} />;
+                      return (
+                        <MappingGenre genreName={genre.name} key={genre.id} />
+                      );
                     })}
                   </div>
                   <p className="pt-3 border-b-2 pb-1  border-dashed">
