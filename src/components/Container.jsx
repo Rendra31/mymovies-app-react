@@ -1,16 +1,10 @@
 import React from "react";
-import Toggle from "./Toggle";
-import { ThemeContext } from "../utils/Context";
-import { useContext } from "react";
 
 const Container = ({ children }) => {
   // =========
   // DARK MODE
   // =========
-  const { isLight, setIslight } = useContext(ThemeContext);
-  const handleClick = () => {
-    setIslight((e) => !e);
-  };
+
   {
     return (
       <>

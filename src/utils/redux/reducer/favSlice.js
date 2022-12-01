@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import Swal from "sweetalert2";
 const favSlice = createSlice({
   name: "add",
+  id: "id",
   initialState: [],
   reducers: {
     addFav: (state, action) => {
@@ -10,9 +11,8 @@ const favSlice = createSlice({
       Swal.fire(`${action.payload.title}`, " add to Favorites", "success");
     },
     deleteFav: (state, action) => {
-      console.log(state);
-      console.log(action);
-      // return state.filter(({ item }) => item.id !== action.payload.id);
+      Swal.fire(`${action.payload.title}`, "removed from Favorites", "success");
+      return state.filter(({ id }) => id !== action.payload.id);
     },
   },
 });
