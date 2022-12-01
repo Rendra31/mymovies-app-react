@@ -14,10 +14,8 @@ import { FiShare2 } from "react-icons/fi";
 const Detail = () => {
   const location = useLocation();
   const [detail, setDetail] = useState([]);
-  // const navigate = useNavigate();
   const movie_id = location?.state?.movie;
   const get_detail = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=9e2dd22911fdca10fd73f04378ba1509&language=en-US`;
-  // console.log(detail);
   const getDetails = () => {
     axios
       .get(get_detail)
@@ -78,9 +76,9 @@ const Detail = () => {
             backgroundImage: `url(${`https://image.tmdb.org/t/p/original${detail.backdrop_path})`}`,
           }}
         >
-          <div className=" grid content-end w-full h-screen bg-gradient-to-t from-black/80  to-transparent ">
-            {/* LEFT CARD */}
+          {/*=== LEFT CARD ===*/}
 
+          <div className=" grid content-end w-full h-screen bg-gradient-to-t from-black/80  to-transparent ">
             <div className=" flex w-full h-[50vh]  text-white">
               <div className=" w-[100vh] flex">
                 <img
@@ -115,7 +113,7 @@ const Detail = () => {
                 </div>
               </div>
 
-              {/* TITLE  */}
+              {/*=== TITLE ===*/}
 
               <div className=" w-full font-sans flex flex-col">
                 <h1 className="text-4xl font-bold ">{detail.title}</h1>
@@ -142,7 +140,7 @@ const Detail = () => {
                 <p className="pt-5 pr-5">{overviewStr(detail.overview, 275)}</p>
               </div>
 
-              {/* ===DETAILS === */}
+              {/* === DETAILS === */}
 
               <div className=" pt-5 rounded-xl backdrop-blur-sm bg-slate-500/10 px-2 m-3 w-1/4 flex-none">
                 <p className="text-2xl font-bold font-sans ">Details</p>

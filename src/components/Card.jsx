@@ -1,7 +1,6 @@
 import React from "react";
-import { BsBookmark } from "react-icons/bs";
 
-const Card = ({ image, title, date, keys, onClick }) => {
+const Card = ({ image, title, date, keys, onClick, actionCard }) => {
   return (
     <div
       key={keys}
@@ -22,8 +21,7 @@ const Card = ({ image, title, date, keys, onClick }) => {
           </h5>
           <p className="font-light text-[12px] md:text-xs pb-2">{date}</p>
         </div>
-
-        <BsBookmark className="cursor-pointer hover:scale-110"></BsBookmark>
+        {actionCard}
       </div>
     </div>
   );
