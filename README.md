@@ -24,8 +24,7 @@ Here is a working live demo - [Vercel](https://mymovies-app-react-beige.vercel.a
 ### Detail
 ![Screenshot from 2022-12-13 11-33-41](https://user-images.githubusercontent.com/112911127/207228072-05ce242f-52a6-4e8b-8eb7-24bd41fc7c24.png)
 
-## 🎨 Inspired Design from
-[github](https://github.com/Annisaard)
+## 🎨 Inspired Design from Annisa Rahmadani [github](https://github.com/Annisaard)
 
 
 ## Features
@@ -44,7 +43,7 @@ npm install
 ### Usage
 
 ```sh
-npm start
+npm run start
 ```
 
 ## 💫Technologies
