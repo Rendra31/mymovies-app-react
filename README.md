@@ -1,9 +1,6 @@
-![image](https://user-images.githubusercontent.com/112911127/204553049-aa427228-23b4-40e4-b1bf-67a349a26c19.png)
-
-## 🌎Demo
 
 
-## Still on development 💻
+
 
 # 📽️ Alta Cinema V.2
 
@@ -56,6 +53,9 @@ Technologies i used to build this are ReactJS, CSS, Tailwind, Redux, Sweetalert2
 - Use react-router-dom v6 to create new route for detail page
 - Use Functional Components & Hooks
 - Props to pass some data from component to component with ease.
+
+## Still on development 💻
+
 
 ## thank you for visiting
 
