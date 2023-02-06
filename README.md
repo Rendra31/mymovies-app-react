@@ -24,7 +24,7 @@ Here is a working live demo - [Vercel](https://mymovies-app-react-beige.vercel.a
 ### Detail
 ![Screenshot from 2022-12-13 11-33-41](https://user-images.githubusercontent.com/112911127/207228072-05ce242f-52a6-4e8b-8eb7-24bd41fc7c24.png)
 
-## 🎨 Inspired Design from [Annisa Rahmadani](https://github.com/Annisaard)
+## 🎨 Inspired Design from [Annisa Rahmadani](https://github.com/Annisaard) & [behance] (https://dribbble.com/shots/18399611-Money-Heist-Series-web-page)
 
 
 ## Features
